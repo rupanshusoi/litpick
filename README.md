@@ -12,9 +12,7 @@ All Markdown files are easily editable to align with your workflow.
 
 # Recommended Workflow
 
-Litpick is meant to be run once a day (or once every few days), but you run multiple times a day as well.
-
-Once recommendations are added to `recommendations.md`, feel free to delete the papers you are not interested in. Litpick will take note of what you delete and what you keep. If Litpick cooks an especially good recommendation (something you would not have found yourself), give it inline feedback.
+Litpick is meant to be run once a day (or once every few days), but you can run multiple times a day as well. When run, Litpick will add its recommendations to `recommendations.md`. Feel free to delete the papers you are not interested in. Litpick will take note of what you delete and what you keep. If Litpick cooks an especially good recommendation (something you would not have found yourself), give it inline feedback.
 
 # Prerequisites
 
@@ -43,7 +41,7 @@ At the top of `prompt.md`, add the path to your notes directory.
 
 If you maintain a Zotero library, Litpick can customize recommendations based on what is present in the library and what you have recently added.
 
-- Install [zotero-mcp](https://github.com/anthropics/zotero-mcp) and make sure the `zotero-mcp` command is on your PATH (or note its full path)
+- Install [zotero-mcp](https://github.com/54yyyu/zotero-mcp) and make sure the `zotero-mcp` command is on your PATH (or note its full path)
 - Copy `.mcp.json.example` to `.mcp.json` and update the `command` field if needed
 - In `run.sh`, uncomment the Zotero `TOOLS+=( ... )` block
 
