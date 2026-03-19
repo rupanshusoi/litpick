@@ -35,7 +35,7 @@ Below I give two ways of providing context to Litpick. If you want to do neither
 
 ## Research notes (highly recommended)
 
-At the top of `prompt.md`, add the path to your notes directory.
+At the top of `prompt.md`, add the path to your notes directory. Modify `run.sh` to give Claude read permissions on this directory.
 
 ## Add Zotero integration (highly recommended)
 
