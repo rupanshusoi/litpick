@@ -10,36 +10,36 @@ Litpick is a paper recommendation agent. Litpick has a singular goal: help you b
 
 All Markdown files are easily editable to align with your workflow.
 
-## Prerequisites
-
-- Claude Code
-
-## Quick start
-
-Please read the customization section first.
-
-### Running for the first time
-The first run may encounter permission issues, so I recommend opening a new Claude Code session in this directory and telling it to follow `prompt.md`. It will prompt you for access to read files or search the web. Once it has access to all the tools it needs, you may run it via the bash script.
-
-### Running regularly
-- `./run.sh` (You may also set this up as a cron job.)
-- Check `recommendations.md` for your recommendations. Leave feedback inline.
-
-## Recommended Workflow
+# Recommended Workflow
 
 Litpick is meant to be run once a day (or once every few days), but you run multiple times a day as well.
 
 Once recommendations are added to `recommendations.md`, feel free to delete the papers you are not interested in. Litpick will take note of what you delete and what you keep. If Litpick cooks an especially good recommendation (something you would not have found yourself), give it inline feedback.
 
-## Customization
+# Prerequisites
+
+- Claude Code
+
+# Quick start
+
+Please read the customization section first.
+
+## Running for the first time
+The first run may encounter permission issues, so I recommend opening a new Claude Code session in this directory and telling it to follow `prompt.md`. It will prompt you for access to read files or search the web. Once it has access to all the tools it needs, you may run it via the bash script.
+
+## Running regularly
+- `./run.sh` (You may also set this up as a cron job.)
+- Check `recommendations.md` for your recommendations.
+
+# Customization
 
 Below I give two ways of providing context to Litpick. If you want to do neither, you may simply edit `taste.md` with your research interests. Running it without doing so will result in generic and unhelpful recommendations.
 
-### Research notes (highly recommended)
+## Research notes (highly recommended)
 
 At the top of `prompt.md`, add the path to your notes directory.
 
-### Add Zotero integration (highly recommended)
+## Add Zotero integration (highly recommended)
 
 If you maintain a Zotero library, Litpick can customize recommendations based on what is present in the library and what you have recently added.
 
@@ -47,15 +47,15 @@ If you maintain a Zotero library, Litpick can customize recommendations based on
 - Copy `.mcp.json.example` to `.mcp.json` and update the `command` field if needed
 - In `run.sh`, uncomment the Zotero `TOOLS+=( ... )` block
 
-### Model
+## Model
 
 I recommend using the latest Opus (currently, Opus 4.6), but you may change this in `run.sh`.
 
-### Venues
+## Venues
 
 `prompt.md` is customized for PL venues. You may want to add or remove venues if you are not a PL researcher.
 
-### Additional domains
+## Additional domains
 
 Claude is setup to have access to arXiV and Google Scholar. If you wish to give it access to more domains, you may modify `.claude/settings.local.json`.
 
