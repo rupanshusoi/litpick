@@ -23,11 +23,11 @@ Litpick is meant to be run once a day (or once every few days), but you can run 
 Please read the customization section first.
 
 ## Running for the first time
-The first run may encounter permission issues, so I recommend opening a new Claude Code session in this directory and telling it to follow `prompt.md`. It will prompt you for access to read files or search the web. Once it has access to all the tools it needs, you may run it via the bash script.
+- `./run.sh`. This runs Claude in interactive mode and with certain permissions. In particular, it can freely modify this directory, and search and fetch any web pages. Interactive mode lets you see what Claude is doing, and helps with forming a mental model of how to nudge it in the right direction. I recommend running interactively the first few times.
+- Check `recommendations.md` at the end.
 
 ## Running regularly
-- `./run.sh` (You may also set this up as a cron job.)
-- Check `recommendations.md` for your recommendations.
+You may prefer to run in headless mode. See `run.sh` for how to do this.
 
 # Customization
 
@@ -52,8 +52,4 @@ I recommend using the latest Opus (currently, Opus 4.6), but you may change this
 ## Venues
 
 `prompt.md` is customized for PL venues. You may want to add or remove venues if you are not a PL researcher.
-
-## Additional domains
-
-Claude is setup to have access to arXiV and Google Scholar. If you wish to give it access to more domains, you may modify `.claude/settings.local.json`.
 

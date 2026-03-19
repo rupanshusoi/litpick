@@ -2,7 +2,8 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-# Read, write and edit permissions are scoped to this directory.
+# This gives Claude permissions to read and write files in this directory, as
+# well as search for and fetch any web pages.
 TOOLS=(
     'Read(**)' 'Write(**)' 'Edit(**)'
     'Glob' 'Grep'
@@ -24,6 +25,7 @@ TOOLS=(
 #     'mcp__zotero__zotero_semantic_search'
 # )
 
-claude -p "$(cat prompt.md)" \
+# You may add -p to run in headless mode.
+claude "$(cat prompt.md)" \
     --model claude-opus-4-6 \
     --allowedTools "${TOOLS[@]}"
