@@ -8,11 +8,13 @@ Litpick is a stateful paper recommendation agent with a singular goal: to help y
 - A mostly-hand-written `prompt.md` to teach the mechanics of literature search, how many papers to recommend each day, how to strike a good balance between old and new papers, etc.
 - Opt-in integration with your research notes and Zotero library.
 
-All Markdown files are easily editable to align with your workflow.
+The core of Litpick is just Markdown files, all of which are easily editable to align with your workflow.
 
 # Recommended Workflow
 
-I run Litpick once every few days, but you can run it a higher frequency. When run, Litpick will add its recommendations to `recommendations.md`. Feel free to delete the papers you are not interested in. Litpick will take note of what you delete and what you keep. Give it feedback inline. E.g., "Feedback: I especially liked the CGO 2022 paper."
+I run 1-3 times a week, but you can run it a higher frequency. When run, Litpick will add its recommendations to `recommendations.md`. Feel free to delete the papers you are not interested in. Litpick will take note of what you delete and what you keep. Give it feedback inline. E.g., "Feedback: I especially liked the CGO 2022 paper."
+
+After a run, you may find it useful to read `state.md` to see how Litpick is thinking about your research interests, which papers it is saving for the future, which citation trails it is following, etc.
 
 # Prerequisites
 
@@ -37,7 +39,7 @@ Below I give two ways of providing context to Litpick. If you want to do neither
 
 At the top of `prompt.md`, add the path to your notes directory. Modify `run.sh` to give Claude read permissions on this directory.
 
-## Add Zotero integration (recommended)
+## Zotero integration (recommended)
 
 If you maintain a Zotero library, Litpick can customize recommendations based on what is present in the library and what you have recently added.
 
@@ -47,10 +49,14 @@ If you maintain a Zotero library, Litpick can customize recommendations based on
 
 ## Venues
 
-`prompt.md` is customized for PL venues. Please update for your research area.
+`prompt.md` is customized for PL venues. Please update for your research area at the top of that file. Litpick will always search arXiV.
 
 ## Model
 
 I recommend using the latest Opus (currently, Opus 4.6), but you may change this in `run.sh`.
+
+# Success Story
+
+- Sometime ago I was thinking about computations other than GEMM for which Tensor Cores (as found on NVIDIA GPUs) may be used. I mentioned this in my research notes. The next day, Litpick cooked with an extremely interesting [paper from ISCA 2022](https://dl.acm.org/doi/10.1145/3470496.3527411) that considers a generalization of this problem from a computer architecture perspective. I do not read ISCA papers usually so it is highly unlikely I would have found this paper otherwise.
 
 
