@@ -47,9 +47,9 @@ If you maintain a Zotero library, Litpick can customize recommendations based on
 - Copy `.mcp.json.example` to `.mcp.json` and update the `command` field if needed
 - In `run.sh`, uncomment the Zotero `TOOLS+=( ... )` block
 
-## Conferences / Journals
+## Conferences / Journals / arXiV
 
-`prompt.md` is customized for PL venues. Please update for your research area at the top of that file. Litpick will always search arXiV.
+`prompt.md` is customized for PL venues. Please update for your research area at the top of that file.
 
 ## Model
 

@@ -10,8 +10,8 @@ Path to research notes: NONE
 ## Research Area
 Programming languages and compilers
 
-## Relevant Conferences
-PLDI, OOPSLA, CGO, ASPLOS, POPL
+## Conferences / Journals / arXiV
+PLDI, OOPSLA, CGO, ASPLOS, POPL, PL arXiV
 
 ## Instructions
 
@@ -24,9 +24,8 @@ PLDI, OOPSLA, CGO, ASPLOS, POPL
 ## Finding New Papers (2-3 per day)
 
 "New" means published in the last few years. Sources:
-- WebFetch on https://arxiv.org/list/cs.PL/new for today's submissions. Also check related arXiv categories for relevant cross-listings.
-- WebSearch for new arXiv preprints related to the research profile.
-- WebSearch for recent conference proceedings from the list of relevant conferences above.
+- WebSearch for new arXiv preprints in the sub-area(s) mentioned above. Also check related sub-areas for relevant cross-listings.
+- WebSearch for recent proceedings from the list of venues above.
 
 ## Finding Older Papers (1-2 per day)
 
