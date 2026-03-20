@@ -1,4 +1,4 @@
-# Paper Agent State
+# Litpick State
 
 ## Research Profile
 

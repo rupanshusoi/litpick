@@ -25,7 +25,7 @@ TOOLS=(
 #     'mcp__zotero__zotero_semantic_search'
 # )
 
-# You may add -p to run in headless mode.
+# Add -p to run in headless mode.
 claude "$(cat prompt.md)" \
     --model claude-opus-4-6 \
     --allowedTools "${TOOLS[@]}"
